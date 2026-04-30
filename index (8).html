@@ -819,26 +819,28 @@
   </section>
 
   <!-- ══ SECTION 5: LETTERS ══ -->
-  <section class="section fade-in-section" id="section-4">
-    <h2 class="section-title"><span>Letters</span></h2>
-    <p class="section-sub">written from the heart, just for you</p>
-    <div class="letters-wrap">
-      <div class="letter-card">
-        <p class="letter-body">
-          Hey <em>Kanak</em>,<br><br>
-          I don't know how to put this into words — but here we are, you turning <em>17</em>, and me trying anyway.<br><br>
-          <div class="letter-divider"></div>
-          From that unexpected confession to everything that came after — you became my <em>favourite person</em> without even trying.<br><br>
-          You make ordinary days feel like something worth remembering. Talking to you feels like coming home, and I hope you never forget how <em>loved</em> you are.<br><br>
-          <div class="letter-divider"></div>
-          Happy birthday, <em>jaanu</em>. 🌸<br>
-          May this year be everything you deserve — and more.
-        </p>
-        <p class="letter-sig">— always yours 💕</p>
-      </div>
-      <!-- Add more letter-card blocks here later -->
+ <section class="section fade-in-section" id="section-4">
+  <h2 class="section-title">Our <span>Story</span></h2>
+  <p class="section-sub">tap to reveal something important</p>
+
+  <div class="letters-wrap">
+    <div class="letter-card" id="proposal-card" style="text-align:center; cursor:pointer;">
+      <p class="letter-body">Tap to open 💌</p>
     </div>
-  </section>
+
+    <div id="proposal-content" style="display:none; margin-top:1.5rem;">
+      <div class="letter-card">
+        <p class="letter-body" id="proposal-text"></p>
+        <p class="letter-sig">— me</p>
+      </div>
+
+      <div class="letter-card">
+        <p class="letter-body" id="reply-text"></p>
+        <p class="letter-sig">— her 🌸</p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- ══ SECTION 6: TELL ME ══ -->
   <section class="section fade-in-section" id="section-5">
@@ -958,6 +960,164 @@ const WRONG_ATTEMPT_MSGS = [
   "ok last try… PLEASE 🙏",
 ];
 
+
+  
+  const PROPOSAL_TEXT = `Shiva ~
+
+First of all bhai sorry Bhai Aaj Maine tuje Jayda preshaan krdia . I mean bhut Jayda hi ....
+And now come to the topic
+U said "jb bhi muje propose Krna ho ek lamba sa paragraph likh dio , I will decide then "
+Hn toh that is going to happen today,, yaa ,,, 
+I am going to propose someone for the first time ....
+So take a long deeeeep  breath now u are going on a looooooong session of reading......
+(I will express my self in term of questions,  so that Mai bhut random naa jaau , I will try to stick to the point .) 
+
+What made me think of this ? 
+
+( Bhyiii language ignore krio , and haan mai sayad apni phle waali bandi ke reference du .. for the last time ..) 
+
+We evolve bhai hmara aisa kuch nhi tha ki phli nazar me pyaar hogaya shitt... I think we both had spent a lot of time together.and with that time, we both evolve,the connection between us evolved ..and with that time I realised yaa she is perfect for me .. she knows me .she understands me .. ham hadse Jayda acche dost hai .. to much comfortable with each other , and after that meri expectations aur badhti gyii , probably the expectations someone expects in a relationship ig ... So ofcourse we were living that ..bs ek tag ki kami thi ..aur kaafi baar Mai bilkul edge pr aake maine apne aap ko hold back krlia ...ki what if this didn't last ? What if mai hi future me palat Gaya toh ? Mai itna emotionally unstable hu ,kyu yaar usse aur kru ? Aur pichla experience bhi mera bhut khraab tha ....but last kuch 1 mahine se ,mai apne aap ko yeh bolkr confront kr raha tha ..ki muje kuch frk ni padta , ham dost hi toh hai ,pr ajeeb bhi lagra tha ...ki yeh isse kyu baat kr ri hai 😭😭 ,muje lagra tha yeh muje complete attention ni deri isliye muje bura lagra hai .. but at the end I accepted it was jealousy, ki she is talking with him like how she do with me ....whyyy? Kya woh itna acvha hai ? Nhi kami toh mujme bhi nhi hai ? Bhai mai last 3 din toh padhne bhi baithta hu , padh bhi nhi para 😭😭bhai bs yhi khyaal . Bhai yeh merese pahle jaise baat kyu nhi kr rhi ? Yeh muje ignore krke usse baat kr ri  hogi ikk ? Mai bhi krra baat isse .. bhaad me jaaye .. i dont care .... Aur jaise hi msg aya sb gussa everything gaayb bhai ....mai alg hi kush huu ... Legittt alag hi. .so that I how I realised and accepted yes , I love her 
+
+Ab next question 
+
+Is it really love ? Yaa mai tujko lekr possesive hu bs isliye yeh feelings aari hai ? 
+
+Monday ko mai hdd gusse me thaa ( ek toh mera gussa ,, bhai mjaak mjaak me mai kb serious hojata hu even I don't know , salute to u jo roj jhelti hai ) and toh mai full iss mood me ki .. kon hai kanak? Mai toh jaanta hi nhi hu ... 
+Pr Bhai jb tu saath baithi ..Bhai pet me gudigudi hori thi 😂🤣..Muje accha lagra tha aisa feel Maine kabhi nhi kra tha with u ...
+ and  offcourse muje  baatein toh acchi lag hi Rahi thi ..but mai tuje dekhra tha .muje accha lgra tha tu bolri thi mai bs sunra tha ..idk why ...and mai manme sochra yaar bandi acchi toh hai .mai iske baccho kaa baap banne layak toh hu ... 😂😂
+Maine tuje iss way me dekha nhi tha kabhi ..pr from this point Maine start kra aapko pyaar bhari nazro se dekhna 😋😂...
+Bhai iske baad maine snap login kra ..mai chats scroll kr raha hu alg hi maje aare hai 
+Bhai choti choti baato pr alag hi kush legit 
+Aur choti choti baato pr alag hi gussa .
+Example 
+Tu mujse kl baat krte hue beech me story lgaane chali gyi mai itna Ganda kilsa hu ...
+Mai last 3 se gusse me hi hu 
+Aur kl toh mai ...bss leave ...
+Maine prso raat ko kuch msg bheje the 
+And kl Maine ig khola 12 baje kee .. aur maine msgs unsend krdiye ..fir jb tujse baat Hui ..aur fir tune woh nonijaap shuru krdia aur fir tune bola mai subh usse baat kr ri thi we decideed ki mandir jaayege etc etc this means tune usse phle bhi insta chlaya thaa ..and mere msgs Jo Maine  bheje woh seen ni kre ...mai aur chadd gaya 
+Fir tune woh screen time waali baat ki" itna hai mai tuje dikha nhi skti "..mai aur chidd gaya 
+( Ki yeh itna baat krti hai usse ? ) 
+And mai padhe hue beech me baat kr raha hu aur tu baar baar jaari hai ..aur gussa aya .
+( Ki bs isse bs ek baat boli hai ...woh tk ni maanti ) 
+And then tu yeh bolkr gyi ki mummy bula ri hai 
+That's okay pr jb aake bataya ki mai ghumne chali gyii thii .......I wass likee ...mai kbse wait kr raha hu .... Aur fir raat ko maine bola woh seen wala on Mt krio aur tu 3 baar bol chuki ki ek baar try krunga ek baar .....maii itna gandaaa muh baana kr gaya hu naaa u can't imagine 
+Fir mai chatt pr ghumrra tha kl raat  and I concludeed what happened today aur muje hasi aari hai ..SO YAA WHEN SOMEONE STARTS COMMING IN YOUR THOUGHTS WHOLE DAY ...THAT IS LOVE  baithte uthte ghumne ...that is love .....
+And Aaj din me jb mai tere saath baitha hu I forgetted everything...I was so much in the moment..I was flying from inside.. Bhai tu jb nakahre dikhaati hai naa ... I love mai isse ladu aur maanu ...muje accha lgane laga hai
+So yaa this is love 
+
+Next question -
+
+Kya yeh feelings abhi aayi hai.. acaank?
+
+Nopes
+Yeh sb phle bhi tha ..
+example 
+-Even after talking for hours.The urge to talk more .
+-Choti choti baato kaa bura lagrna 
+-maine sayad aajtk apne emotions ITNE toh    kisi ke saamne ni dikhaaye ...tere saamne apne aap nikal jaate hai ....why?
+-jb arshiya aayi thi beech me . I was like yeh kyu aati hai because mai baith ni pata .so the urge to sit with u and talk and laugh 
+- mood dependence on tujse baat kaise hui hai ..
+-gaane sunte hue acaank kuch sochna aur hasna 
+-and ..even after breakup I didn't feel anything much coz my heart was already there with someone. Kept safely 
+Tooo much broo.. this list kept going.
+
+
+So Abhi tk I have made clear how I started loving you ...
+
+Now I will tell the things I liked about you which ultimately leads to fall in love with you 
+
+
+- Umm ofcourse hairs first ..I seriously want to feel then pr meri futi kismat... Lambe baal woh bhi with  with layer cut is love mai itne me hii flat huu ...
+
+- the rawwness of you - unfiltered jo hai woh hai jisse buri Lage Lage . unfiltered unbiased simple 
+
+- ofcourse smile - apne bando ke saath haste raho poore din aur baakio ko bhaav bhi naa do aur ek hota hai hasna tej tej Tera laugh wasisa nhi hai .hai bhi toh I like that. pr like Smile Jo tu mere ko dekh kr deti hai silent waali ...I can visualise that currently 
+
+-baat baat pr jaanbuj kr yeh soj kr baith jana .ki mai kyu baat kru .yeh krega yeh mnaayega meri galti thodi hai .that soft ego
+
+- muje chat to pasand hai hi usse Jayda jb tu side me baith kr btaati hai ki aaj yeh hua isne yeh kra ..I just oveeeeee that .
+
+-pure expressions and muh bnaake "abeyyy oooo chal " teri yeh waali tone kaa mai fan huu 
+
+- aur teri woh sarcastic waali . "Haaan Haan; sb smjri hu .... Ab kyu krega tu yeh sb " yeh waali tone this is my fav 
+
+- I just like complete you I can write bhut kuch 
+  9 30 hogye hai aur ab I can't wait more ..yeh sb mai tuje ab batata rhunga chill 
+I planned poora grand proposal bhai 
+Pr 5 6 ghante me kya hi hota hai bhai 
+I was even sketich something 
+I was even coading something jb complete hoga tb bhej dunga ....
+
+
+Why you should consider me ~
+
+Dekh maine gym bhi shuru krdia hai . Aur abhi kuch saalo me Ameer bhi hone wala hu heinaa 😂 jokes aside 
+
+Dekh it's all your decision and I will respect it . And haan bs naa yeh soch kr apna decision me lio ki dosti naa khatm hojaaye nhi ..what u want from inside go for that ...
+
+And rahi baat expectations ki I don't have now .bs I want mera koi bhrosa naa tode I am good with that .aur mai aakh band krke bhrosa krta hu .I know u will not ...aur baaki yeh ki ladko se baat nhi Krna yeh nhi Krna ...htt bhaii mjaak se hatke .dost tere bhi hai dost mere bhi pr no one will become resason jisse tuje kuch galat feel ho ..I promise ...muje noni se bhi dikkat nhi hai speaking my heart out ..bs sayad woh jealousy hai uska mai kuch ni kr skta ..
+Jo tune abhi msg kre hai ..noni se baat band no need aisa kuch krne ki jrurat ni hai chill 
+...i believed you , I believe you , I will believe you ....I know u will never lie to me ...I am totally transparent with u and u to be that bss.
+
+Aur haan sayad abhi iss point tk maine juth bole honge kuch pr mark the date 24 July 2025 aaj ke baad aisa kuch nhi hoga 
+Tuje kuch bhi Lage kuch bhi ho u can ask freely...
+ 
+And talking about ashi she is past now .. mai ab kaafi aage aagya hu usse .. bura iss baat ka nhi lgta ki woh mere saath nhi hai .bura iss baat kaa lgta hai ki usne bhrosa toda.
+
+
+And now 
+
+I don't singing and guitar but if I ever could 
+I will sing this song for you 
+
+Listens it completely then proceed further 
+It's each word each line is for you ..
+I repeat EACH WORD EACH LINE 
+just assume
+Perfect song for this situation 
+
+
+
+
+
+Now final proposal finally 
+Knk I am in tears at this point...
+
+Remember I said meri english acchi hori hai kl ? Ab you will get to know why..
+
+( Yeh Maine kl type kra tha I am pasting here poora type maine kra tha .just to look  better 
+Maine isse gpt se format krwa lia .like commnas and fullstop )
+
+So here I go 
+
+I love you, firstly, because I can be myself around you.
+You make me feel so comfortable and safe that I can come out of my shell—be it my childish self, my angry self, or whoever I want to be. Everyone stands with me when I’m at my high, but you… you’ve always been there during my lows, in my hardships.
+
+It’s not easy for me to show my genuine emotions—I usually hide them—but with you, I don’t have to. With you, I can be real.
+I love how every time we’re together, no matter what happens—even after fights—there’s always this unshakable bond between us.
+
+You’ve shown me what true love is. I never received this kind of love and care before, and I only hope that I can make you feel truly loved too. I know I’m not perfect—I make mistakes—but you love me even through my flaws. And I love you for yours.
+To me, you are perfect the way you are.
+You’re the most compassionate, kind-hearted soul I’ve ever met. You can be angry, clumsy, or childish at times, but I love that side of you—it shows me how much you trust me to be your safe space.
+
+The list of reasons I love you could go on forever.
+But the last thing I want to tell you is this:
+Every time I look deep into your eyes, I feel a comfort that whispers… “She is mine, and I am hers.”
+
+So, finally, I just want to ask you, Kanak—
+Meri banogi kya? ❤️`;
+const REPLY_TEXT = `Kanak ~
+
+I want to be honest with you.. These past days, I’ve been going through a lot of feelings—doubts, fears, happiness, and confusion and manymore(bhenchod kyu krta hai yye sbb)..ik i wasn't ready for rln or love kinda thing but when you see someone putting their heart out just for you.. you can't say no.. genuinely..But through all of that, one thing has become clear to me: you are the one I wanted..I needed..
+Jbb para pdhe I was freezed seriously freezed..idk what to reply or what to react..it was more of a shock to me because I have never expected this..tu aisa kuch krega mtlb kbhi nhi kyuki from the beginning ek line maintained thhi and I never wanted to cross that or even think or crossing that..but tu toh bhenchod jis chiz ke liye mana hota hai voh hhi krega so you did..and after reading those para i have millions of doubts, insecurity, fear, and genuinely that stress..the only thing that made me say yes is the TRUST Idk
+
+about love or anything i just know that you are the who can me this girl a lovergirl..
+ I trust you more than anyone else. And now, it’s not just friendship anymore. It’s something deeper, something I can’t ignore anymore—I love you.
+I love the way you listen to me without judgment, the way you respect my space and my pace..I love your patience and the way you’ve stood by me even when I wasn't sure..That means more than words can say.
+
+I may not be perfect at expressing my feelings yet, and I might still need time to say all the things my heart feels.It's actually not easy for me to change emotions so suddenly like dosti se sidha rln it's not ki i don't want it but yk tujhe bhi time lga hoga naa sbb chizo ko
+
+conclude krne me vaise hhi mujhe lgega..i want to be the girl you want..to be the girl you will have expectations with.. now i m ready to give my efforts out for you every second every minute..for you only.. Saying yes to you felt like saying thanks to God for this new and the most beautiful chapter of my life..or haan kanak toh sachme bhot pehle se hhi shiva ki thhi..(the answer of your proposal) ❤️`;
 /* ============================================================
    STARFIELD
    ============================================================ */
@@ -976,6 +1136,7 @@ for (let i = 0; i < 3; i++) {
   sf.appendChild(sh);
 }
 
+  
 /* ============================================================
    FLOATING PETALS (reduced count for perf)
    ============================================================ */
@@ -1358,6 +1519,25 @@ tellmeSubmit.addEventListener("click", () => {
   tellmeConfirm.classList.add("show");
   setTimeout(() => tellmeConfirm.classList.remove("show"), 2500);
   renderMessages();
+});
+
+  const proposalCard = document.getElementById("proposal-card");
+const proposalContent = document.getElementById("proposal-content");
+
+const proposalTextEl = document.getElementById("proposal-text");
+const replyTextEl = document.getElementById("reply-text");
+
+// Load from memory if exists
+proposalTextEl.textContent = localStorage.getItem("proposal_text") || PROPOSAL_TEXT;
+replyTextEl.textContent = localStorage.getItem("reply_text") || REPLY_TEXT;
+
+// Save them once (so they stay forever)
+localStorage.setItem("proposal_text", proposalTextEl.textContent);
+localStorage.setItem("reply_text", replyTextEl.textContent);
+
+proposalCard.addEventListener("click", () => {
+  proposalCard.style.display = "none";
+  proposalContent.style.display = "block";
 });
 </script>
 </body>
