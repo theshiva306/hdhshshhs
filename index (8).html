@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@300;400;500&family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 
   <style>
     /* ============================================================
@@ -858,6 +859,7 @@
           rows="5"
         ></textarea>
         <button class="tellme-submit" id="tellme-submit">Send ✦</button>
+        <button class="tellme-submit" id="tellme-screenshot">Screenshot 📸</button>
         <p class="tellme-confirm" id="tellme-confirm">Got it. 🌸</p>
       </div>
       <div class="tellme-messages" id="tellme-messages" style="display:none;">
@@ -1548,6 +1550,18 @@ setTimeout(() => proposalContent.style.opacity = "1", 10);
   proposalClose.addEventListener("click", () => {
   proposalContent.style.display = "none";
   proposalCard.style.display = "block";
+});
+  const screenshotBtn = document.getElementById("tellme-screenshot");
+
+screenshotBtn.addEventListener("click", () => {
+  const box = document.querySelector(".tellme-box");
+
+  html2canvas(box).then(canvas => {
+    const link = document.createElement("a");
+    link.download = "message.png";
+    link.href = canvas.toDataURL();
+    link.click();
+  });
 });
 </script>
 </body>
