@@ -829,6 +829,9 @@
     </div>
 
     <div id="proposal-content" style="display:none; margin-top:1.5rem;">
+      <button id="proposal-close" class="reason-btn" style="margin-bottom:1rem;">
+  Close ✖
+</button>
       <div class="letter-card">
         <p class="letter-body" id="proposal-text"></p>
         <p class="letter-sig">— me</p>
@@ -1523,6 +1526,7 @@ tellmeSubmit.addEventListener("click", () => {
 
   const proposalCard = document.getElementById("proposal-card");
 const proposalContent = document.getElementById("proposal-content");
+  const proposalClose = document.getElementById("proposal-close");
 
 const proposalTextEl = document.getElementById("proposal-text");
 const replyTextEl = document.getElementById("reply-text");
@@ -1538,6 +1542,12 @@ localStorage.setItem("reply_text", replyTextEl.textContent);
 proposalCard.addEventListener("click", () => {
   proposalCard.style.display = "none";
   proposalContent.style.display = "block";
+proposalContent.style.opacity = "0";
+setTimeout(() => proposalContent.style.opacity = "1", 10);
+});
+  proposalClose.addEventListener("click", () => {
+  proposalContent.style.display = "none";
+  proposalCard.style.display = "block";
 });
 </script>
 </body>
